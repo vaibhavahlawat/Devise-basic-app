@@ -3,7 +3,9 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   before_filter :authenticate_user!, :except => [:show, :index]
+
   def index
+    # debugger
     @products = Product.all
 
     respond_to do |format|

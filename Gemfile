@@ -8,6 +8,7 @@ gem 'rails', '3.2.5'
 gem 'sqlite3'
 gem 'devise'
 
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -19,8 +20,11 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+gem 'tddium-linecache19', '0.5.13'
+gem 'ruby-debug-base19x', '0.11.30.pre10'
+gem "ruby-debug19", :require => 'ruby-debug'
 gem 'jquery-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
