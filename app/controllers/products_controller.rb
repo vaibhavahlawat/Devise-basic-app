@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   before_filter :authenticate_user!, :except => [:show, :index]
-
+  protect_from_forgery :except => :receive_guess
   def index
     # debugger
     @products = Product.all
